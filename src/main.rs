@@ -1,8 +1,5 @@
-use crate::garden::vegetables::Asparagus;
-
-pub mod garden;
+mod test;
 
 fn main() {
-    let plant = Asparagus {};
-    println!("I'm growing {plant:?}!");
+    test::world(String::from("Egor"))
 }
