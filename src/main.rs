@@ -1,7 +1,8 @@
-mod folder1;
-mod folder2;
+use Practice_7::math_utils;
 
 fn main() {
-    folder1::test1::world1(String::from("Egor1"));
-    folder2::test2::world2(String::from("Egor2"));
+    let one = math_utils::max_of_two(1.0, 2.0);
+    let two = math_utils::min_of_two(1.0, 2.0);
+    println!("{}", one);
+    println!("{}", two);
 }
